@@ -1,0 +1,72 @@
+<html>
+
+<head>
+<title>Steam Game Library Rating</title>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" src="jquery.xdomainajax.js"></script> -->
+<style>
+*{
+	text-align: center;
+}
+input{
+	margin-top: 15px;
+	text-align: left;
+}
+.name{
+	font-weight: bold;
+	font-size: 14px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.name-header{
+	font-size: 20px;
+}
+.ignrating{
+	text-align: left;
+	border-bottom: 1px solid black;
+}
+.ignrating-header{
+	font-size: 14px;
+}
+#gameList>table{
+	border: 1px solid black;
+	margin: auto;
+	margin-bottom: 10px;
+}
+td{
+	padding: 2px;
+}
+.best{
+	background-color: green;
+	color: white;
+}
+.good{
+	background-color: yellow;
+	color: black;
+}
+.bad{
+	background-color: orange;
+	color: white;
+}
+.worst{
+	background-color: red;
+	color: white;
+}
+</style>
+</head>
+
+<body>
+Enter your Profile ID: <input type="text" id="txtID"/><br/>
+[Get the Steam64 ID <a href="http://steamidconverter.com" target="_blank">HERE</a> (unaffilated site)]
+
+<br /><br />
+
+<div id="gameList"></div>
+
+<script type="text/javascript" src="functions.js"></script>
+</body>
+
+</html>
